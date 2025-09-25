@@ -1,0 +1,106 @@
+*{ box-sizing: border-box;margin: 0; padding: 0;}
+
+
+:root {
+    --lime-green: hsl(0, 0%, 0%);
+    --bright-cyan: hsl(246, 100%, 11%);
+}
+.button{
+  position:relative;
+  display:inline-block;
+  margin:20px;
+  text-align: center;
+ 
+}
+
+.button a{
+  color:white;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:36px;
+  text-align: center;
+  text-decoration:none;
+  background-color:hsl(192, 41%, 61%);
+  display:block;
+  position:relative;
+  padding:20px 40px;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #ffffff;
+  filter: dropshadow(color=#ffffff, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 hsl(192, 91%, 26%);
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 hsl(192, 91%, 26%);
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 hsl(192, 91%, 26%);
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button a:active{
+  top:10px;
+  background-color:hsl(192, 41%, 61%);
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 hsl(192, 91%, 26%);
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 hsl(192, 91%, 26%);
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 hsl(192, 91%, 26%);
+}
+
+.button:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#000000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    min-height: 100vh;
+    background-image: linear-gradient(180deg, var(--lime-green), var(--bright-cyan));
+}
+
+
+h1{
+  font-family: '8BIT WONDER', sans-serif;
+   text-align: center;     
+   padding: 10px;                    
+  color: hsl(192, 41%, 61%);
+  font-size: 60px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000000;
+  
+ }
+ h2{
+  
+   text-align: center;                         
+  color: hsl(192, 41%, 61%);
+  margin: 50px 200px;
+  font-size: 30px;
+   }
+   h3{
+    text-align: center;                         
+  color: hsl(192, 41%, 61%);
+  margin: 50px 200px;
+ 
+   }
+    
+
+   
+
+   
+
+
+
+
+   /* hover */
